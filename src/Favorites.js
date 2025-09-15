@@ -1,7 +1,10 @@
 import React from 'react'
 
-export default function Favorites(params) {
+export default function Favorites() {  
   return (
-    <p>Favorites Component</p>
+    <div className="favorites-section">
+      <h2>My Favorite Pokemon</h2>
+      {/* TODO: Display favorite pokemon */}
+    </div>
   )
 }

@@ -1,7 +1,13 @@
 import './App.css'
+import PokemonList from './PokemonList'
+import Favorites from './Favorites'
 
 export default function App() {
   return (
-    <h1>PokéAPI Project</h1>
+    <div className="App">
+      <h1>PokéAPI Project</h1>
+      <PokemonList />
+      <Favorites />
+    </div>
   )
 }

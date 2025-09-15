@@ -1,74 +1,109 @@
-# PokéInterview
-Technical interview template using PokéAPI.
+# Pokemon React Interview Template
 
-## Getting Started with Create React App
+This is a technical interview template designed to assess React developers on key skills including:
+- React Hooks (useState, useEffect)
+- API integration and async operations
+- State management and prop passing
+- Component communication
+- CSS styling
+- Problem-solving approach
+
+## For Interviewers
+
+### Setup Instructions
+1. Ensure the candidate has Node.js installed
+2. Share this repository with the candidate
+3. Give them the `instructions.md` file
+4. Set a timer for 45 minutes (+ 15 minutes for discussion)
+
+### What's Included
+- Basic React app structure
+- Incomplete components with TODO comments
+- CSS starter styles
+- Comprehensive instructions for candidates
+
+### What Candidates Need to Implement
+1. **Data Fetching** - Fetch Pokemon data for ids 1-20 using PokeAPI
+2. **Card Styling** - Create responsive card layout with vertical design
+3. **Search Functionality** - Filter Pokemon by name using existing search input
+4. **Favorites System** - Add/remove Pokemon from favorites
+
+### Evaluation Guide
+
+#### Task 1: Data Fetching (15-20 min)
+**Looking for:**
+- Fetching Pokemon data for specific ids (1-20) 
+- Proper useEffect usage with dependency array
+- Async/await or .then() for API calls
+- Displaying id, name, and image for each Pokemon
+- Error handling (bonus)
+
+**Red flags:**
+- Infinite loops (missing useEffect dependencies)
+- Not handling async operations properly
+- Accessing undefined properties without checks
+
+#### Task 2: Styling (10-15 min)
+**Looking for:**
+- Responsive multi-column card layout
+- Proper vertical card arrangement (image, name, button)
+- Clean visual hierarchy and spacing
+- Styled buttons with background and hover effects
+- Professional presentation
+
+#### Task 3: Search (10-15 min)
+**Looking for:**
+- Array filter method
+- Case-insensitive search
+- Real-time filtering as user types (no submit button)
+- "No Pokemon found" message for empty results
+
+#### Task 4: Favorites (15-20 min)
+**Looking for:**
+- State lifting to App component
+- Proper prop passing
+- Preventing duplicate favorites
+- Immutable state updates
+
+**This is the most complex task - shows advanced React skills**
+
+### Discussion Points
+- Walk through their approach to fetching specific Pokemon by id
+- Ask about their CSS layout strategy and responsive design choices
+- Discuss state management decisions for search and favorites
+- Discuss potential improvements or optimizations
+- Review code organization and React best practices
+- Ask about error handling strategies
+
+## For Candidates
+
+Please see `instructions.md` for your interview tasks.
+
+## Current State
+
+The app currently shows:
+- A basic React structure
+- Empty Pokemon list (needs API integration)
+- Existing search input (needs functionality)
+- Basic Favorites component (needs connection to main list)
+- Minimal styling (cards need complete styling)
+
+All the scaffolding is there - you just need to make it work!
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### `npm test`
+Launches the test runner in interactive watch mode.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### `npm run build`
+Builds the app for production to the `build` folder.
 
