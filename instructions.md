@@ -55,13 +55,13 @@ The Pokemon items currently have no styling and appear as plain HTML elements.
 - Clicking the button should add the specified pokemon to the favorites list
 - Prevent adding duplicate Pokemon to favorites
 - Use the same card styling you made in PokemonList
-- **Bonus:** Add a functional "Remove from Favorites" button in the Favorites section
 
 **Expected result:** Clicking "Add to Favorites" should add that Pokemon to the Favorites section below. The Favorites section should display the favorited Pokemon with the same styling as the main list.
 
 ## Bonus Challenges (If time permits)
 
-5. **Local Storage**: Persist favorites in browser storage
+- **Bonus:** Add a functional "Remove from Favorites" button in the Favorites section
+5. **Local Storage**: Persist favorite adding and removing in browser storage
 1. **Loading States**: Add better loading indicators during API calls
 2. **Error Handling**: Show user-friendly error messages if API calls fail
 
