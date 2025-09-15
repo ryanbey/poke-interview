@@ -30,7 +30,7 @@ The Pokemon items currently have no styling and appear as plain HTML elements.
 - Style each Pokemon card as a vertical layout containing:
   - Pokemon image at the top
   - Pokemon name in the middle  
-  - "Add to Favorites" button at the bottom
+  - "Add to Favorites" button at the bottom (non-functional for now)
 - Add appropriate spacing and visual hierarchy to make cards look organized
 - Ensure the layout works well on different screen sizes
 - Style the "Add to Favorites" button with a background and hover styling
